@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Y&M Production</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="../css/feuillestyle-YM.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="fr-index.html" class="logo">YM<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="fr-index.html">Accueil</a></li>
+            <li><a href="fr-Portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="fr-Tarifs.html">Tarifs</a></li>
+            <li><a href="fr-bio.html">Bio</a></li>
+            <li class="lang-switch"><a href="../en/en-portfolio.html">EN</a></li>
+            <li><a href="fr-index.html#contact" class="nav-contact-btn">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="portfolio-hero">
+        <div class="hero-content">
+            <h1 class="kinetic-text">Port<span>folio</span></h1>
+            <p>Découvrez nos projets récents, concepts artistiques et réalisations sur mesure.</p>
+        </div>
+        
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="portrait">Portraits</button>
+            <button class="filter-btn" data-filter="auto">Automobile</button>
+            <button class="filter-btn" data-filter="commercial">Commercial & Événement</button>
+            <button class="filter-btn" data-filter="video">Vidéo</button>
+        </div>
+    </header>
+
+    <main class="portfolio-section">
+        <div class="masonry-grid" id="portfolio-grid">
+
+            <div class="masonry-item item-wide" data-category="portrait">
+                <div class="media-container">
+                    <img src="https://picsum.photos/1200/800?random=11" alt="Portrait Studio">
+                    <div class="overlay">
+                        <div class="overlay-info">
+                            <span class="category-tag">Portrait</span>
+                            <h3>Lumières d'Ombre</h3>
+                            <p>Séance studio haute couture & retouche poussée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-category="auto">
+                <div class="media-container">
+                    <img src="https://picsum.photos/800/1200?random=12" alt="Automobile Classic">
+                    <div class="overlay">
+                        <div class="overlay-info">
+                            <span class="category-tag">Automobile</span>
+                            <h3>Élégance Classique</h3>
+                            <p>Prises de vue extérieures & lignes vintage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-category="commercial">
+                <div class="media-container">
+                    <img src="https://picsum.photos/800/1000?random=13" alt="Campagne Commerciale">
+                    <div class="overlay">
+                        <div class="overlay-info">
+                            <span class="category-tag">Commercial</span>
+                            <h3>Identité de Marque</h3>
+                            <p>Mise en valeur de produits & direction artistique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item item-tall" data-category="portrait">
+                <div class="media-container">
+                    <img src="https://picsum.photos/800/1400?random=14" alt="Expression Émotionnelle">
+                    <div class="overlay">
+                        <div class="overlay-info">
+                            <span class="category-tag">Portrait</span>
+                            <h3>Regard Brut</h3>
+                            <p>Capture spontanée et travail du grain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item item-wide" data-category="video">
+                <div class="media-container video-item">
+                    <img src="https://picsum.photos/1200/700?random=15" alt="Showreel Vidéo">
+                    <div class="play-icon">&#9654;</div>
+                    <div class="overlay">
+                        <div class="overlay-info">
+                            <span class="category-tag">Vidéo</span>
+                            <h3>Cinematic Reel 2026</h3>
+                            <p>Extrait de réalisation publicitaire & événementielle.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-category="commercial">
+                <div class="media-container">
+                    <img src="https://picsum.photos/800/800?random=16" alt="Couverture Événement">
+                    <div class="overlay">
+                        <div class="overlay-info">
+                            <span class="category-tag">Événement</span>
+                            <h3>Ambiance Nocturne</h3>
+                            <p>Reportage en direct & ambiance live.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-category="auto">
+                <div class="media-container">
+                    <img src="https://picsum.photos/800/1000?random=17" alt="Détail Automobile">
+                    <div class="overlay">
+                        <div class="overlay-info">
+                            <span class="category-tag">Automobile</span>
+                            <h3>Reflets & Matières</h3>
+                            <p>Focus sur la finition et les courbes du véhicule.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Collaborons<span>.</span></h2>
+                <p>Prêt à immortaliser votre projet ? Écrivez-nous et discutons de vos idées.</p>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <span>Email</span>
+                        <p>hello@ymproduction.ca</p>
+                    </div>
+                    <div class="detail-item">
+                        <span>Localisation</span>
+                        <p>Sherbrooke, QC</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group"><input type="text" placeholder="NOM COMPLET" required></div>
+                <div class="form-group"><input type="email" placeholder="COURRIEL" required></div>
+                <div class="form-group"><textarea placeholder="VOTRE MESSAGE" rows="5"></textarea></div>
+                <button type="submit" class="btn-send">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2026 Y&M PRODUCTION</p>
+            <div class="social-links">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">FACEBOOK</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+        <img src="#" alt="Full view">
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

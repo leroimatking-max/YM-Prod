@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Y&M Production — Visual Creation Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="../css/feuillestyle-YM.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">YM<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="en-index.html">Home</a></li>
+          <li><a href="en-Portfolio.html">Portfolio</a></li>
+          <li><a href="en-Tarifs.html">Pricing</a></li>
+          <li><a href="en-bio.html">Bio</a></li>
+          <li class="lang-switch"><a href="../fr/fr-bio.html">FR</a></li>
+          <li><a href="en-index.html#contact" class="nav-contact-btn">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="kinetic-text">Our<br><span>Story</span></h1>
+            <p>Y&M Production — Visual Creation Studio</p>
+        </div>
+    </header>
+
+<section id="hist" class="hist-section">
+      <div class="hist-container">
+        <h2 class="section-title">THE YM STORY</h2>
+        <div class="hist">
+          <div class="hist-card">
+            <div class="hist-image"><img src="../img/histoire.webp" alt="Y&M Production studio"></div>
+            <div class="hist-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+    <section id="bio" class="bio-section">
+      <div class="bio-container">
+        <h2 class="section-title">The Team<span>.</span></h2>
+        <div class="bio-grid">
+          <div class="bio-card">
+            <div class="bio-image"><img src="../img/ta-photo.jpg" alt="Yorik Blouin"></div>
+            <div class="bio-text">
+              <h3>Yorik Blouin</h3>
+              <p>Co-founder & Photographer</p>
+            </div>
+          </div>
+          <div class="bio-card">
+            <div class="bio-image">
+              <img src="../img/photo-Matthieu.jpg" alt="Matthieu Chouinard">
+            </div>
+            <div class="bio-text">
+              <h3>Matthieu Chouinard</h3>
+              <span class="role">Co-founder</span>
+              <p>Expert in post-production and capturing spontaneous moments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Let's Collaborate<span>.</span></h2>
+                <p>Ready to bring your project to life? Drop us a line and let's discuss your ideas.</p>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <span>Email</span>
+                        <p>hello@ymproduction.ca</p>
+                    </div>
+                    <div class="detail-item">
+                        <span>Location</span>
+                        <p>Sherbrooke, QC</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/xrpbyrqb" method="POST">
+                <div class="form-group"><input type="text" name="name" placeholder="FULL NAME" required></div>
+                <div class="form-group"><input type="email" name="email" placeholder="EMAIL" required></div>
+                <div class="form-group"><textarea name="message" placeholder="YOUR MESSAGE" rows="5"></textarea></div>
+                <button type="submit" class="btn-send">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2026 Y&M PRODUCTION</p>
+            <div class="social-links">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">FACEBOOK</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="#" alt="Full view">
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

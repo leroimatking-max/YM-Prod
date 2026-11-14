@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Y&M Production — Visual Creation Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="../css/feuillestyle-YM.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">YM<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#tarifs">Pricing</a></li>
+          <li><a href="#bio">Bio</a></li>
+          <li class="lang-switch"><a href="../fr/fr-index.html">FR</a></li>
+          <li><a href="#contact" class="nav-contact-btn">Contact</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="kinetic-text">Capture the ephemeral<br><span>create the eternal</span></h1>
+            <p>Y&M Production — Visual Creation Studio</p>
+        </div>
+    </header>
+
+    <section id="portfolio" class="gallery-section">
+        <h2 class="section-title">Selected Works<span>.</span></h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="https://picsum.photos/800/1200?random=1" alt="Portrait"></div>
+            <div class="gallery-item span-2"><img src="https://picsum.photos/1200/800?random=2" alt="Landscape"></div>
+            <div class="gallery-item"><img src="https://picsum.photos/800/1200?random=3" alt="Portrait"></div>
+            <div class="gallery-item"><img src="https://picsum.photos/800/1200?random=4" alt="Portrait"></div>
+            <div class="gallery-item span-2"><img src="https://picsum.photos/1200/800?random=5" alt="Landscape"></div>
+            <div class="gallery-item"><img src="https://picsum.photos/800/1200?random=6" alt="Portrait"></div>
+        </div>
+    </section>
+
+    <section id="tarifs" class="pricing-section">
+      <h2 class="section-title">Packages<span>&</span> Services</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Express Session</h3>
+          <span class="price">$150</span>
+          <ul class="features">
+            <li>30 minutes session</li>
+            <li>5 retouched photos</li>
+            <li>Private gallery</li>
+          </ul>
+          <a href="#contact" class="btn-select">Book Now</a>
+        </div>
+        <div class="pricing-card featured">
+          <h3>Signature</h3>
+          <span class="price">$350</span>
+          <ul class="features">
+            <li>1h30 session</li>
+            <li>20 retouched photos</li>
+            <li>Multiple outfits</li>
+          </ul>
+          <a href="#contact" class="btn-select">Book Now</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Event</h3>
+          <span class="price">Custom</span>
+          <ul class="features">
+            <li>Full coverage</li>
+            <li>Unlimited photos</li>
+            <li>Fast delivery</li>
+          </ul>
+          <a href="#contact" class="btn-select">Book Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="bio" class="bio-section">
+      <div class="bio-container">
+        <h2 class="section-title">The Team<span>.</span></h2>
+        <div class="bio-grid">
+          <div class="bio-card">
+            <div class="bio-image"><img src="../ta-photo.jpg" alt="Mathieu"></div>
+            <div class="bio-text">
+              <h3>Matthieu Chouinard</h3>
+              <p>Co-founder & Photographer</p>
+            </div>
+          </div>
+          <div class="bio-card">
+            <div class="bio-image"><img src="../photo-yorik.jpg" alt="Yorik"></div>
+            <div class="bio-text">
+              <h3>Yorik Blouin</h3>
+              <span class="role">Co-founder</span>
+              <p>Expert in post-production and capturing spontaneous moments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Let's Collaborate<span>.</span></h2>
+                <p>Ready to bring your project to life? Drop us a line and let's discuss your ideas.</p>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <span>Email</span>
+                        <p>hello@ymproduction.ca</p>
+                    </div>
+                    <div class="detail-item">
+                        <span>Location</span>
+                        <p>Sherbrooke, QC</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group"><input type="text" placeholder="FULL NAME" required></div>
+                <div class="form-group"><input type="email" placeholder="EMAIL" required></div>
+                <div class="form-group"><textarea placeholder="YOUR MESSAGE" rows="5"></textarea></div>
+                <button type="submit" class="btn-send">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>© 2026 Y&M PRODUCTION</p>
+            <div class="social-links">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">FACEBOOK</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="#" alt="Full view">
+    </div>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.querySelector('.nav-links');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        const galleryItems = document.querySelectorAll('.gallery-item img');
+        const closeBtn = document.querySelector('.close-lightbox');
+
+        galleryItems.forEach(img => {
+            img.addEventListener('click', () => {
+                lightbox.classList.add('active');
+                lightboxImg.src = img.src;
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if(e.target === lightbox) closeBtn.click();
+        });
+    </script>
+</body>
+</html>

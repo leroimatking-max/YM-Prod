@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Y&M Production</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link href="css/feuillestyle-YM.css" rel="stylesheet" type="text/css">
+<style>
+    .lang-selector {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .lang-btns {
+        display: flex;
+        gap: 2rem;
+    }
+    .lang-btns a {
+        padding: 1rem 2.5rem;
+        border: 1px solid var(--sage-green);
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Syne', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        border-radius: 50px;
+        transition: var(--transition);
+    }
+    .lang-btns a:hover {
+        background: var(--sage-green);
+        color: var(--bg-dark);
+    }
+</style>
+</head>
+<body>
+    <div class="lang-selector">
+        <div class="logo">YM<span>.</span></div>
+        <p style="letter-spacing: 3px; font-size: 0.8rem; text-transform: uppercase; opacity: 0.6;">Choose your language / Choisissez votre langue</p>
+        <div class="lang-btns">
+            <a href="fr/fr-index.html">Français</a>
+            <a href="en/en-index.html">English</a>
+        </div>
+    </div>
+</body>
+</html>
